@@ -15,7 +15,7 @@ def generate_directory_structure(root_dir, structure_output_file, code_output_fi
         ignore_paths = []
 
     if code_extensions is None:
-        code_extensions = [".py", ".dart", ".java", ".js", ".html", ".css"]
+        code_extensions = [".py", ".dart", ".java", ".js", ".html", ".css", ".csproj", ".cs", ".json"]
 
     # Add .git to ignore paths by default
     ignore_paths.append(os.path.normpath(os.path.join(root_dir, '.git')))
